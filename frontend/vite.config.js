@@ -9,7 +9,7 @@ export default defineConfig({
     strictPort: true,
     proxy: {
       '/auth': {
-        target: 'http://localhost:8080',
+        target: 'https://market-return.onrender.com',
         changeOrigin: true,
       },
     },

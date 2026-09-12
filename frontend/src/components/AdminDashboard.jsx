@@ -461,7 +461,7 @@ export default function AdminDashboard() {
     setLoading(true);
 
     try {
-      await axios.post('http://localhost:8080/auth/register', {
+      await axios.post('https://market-return.onrender.com/auth/register', {
         name: form.name,
         email: form.email,
         password: form.password,
@@ -483,7 +483,7 @@ export default function AdminDashboard() {
     setLoading(true);
 
     try {
-      const response = await axios.put('http://localhost:8080/auth/role/change', {
+      const response = await axios.put('https://market-return.onrender.com/auth/role/change', {
         email: form.email,
         role: form.role,
       }, authHeader);
@@ -503,7 +503,7 @@ export default function AdminDashboard() {
     setLoading(true);
 
     try {
-      await axios.put('http://localhost:8080/auth/password/change', {
+      await axios.put('https://market-return.onrender.com/auth/password/change', {
         email: form.email,
         password: form.password,
       }, authHeader);

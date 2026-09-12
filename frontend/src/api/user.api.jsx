@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:8080';
+const API_BASE = 'https://market-return.onrender.com';
 
 const api = axios.create({
   baseURL: API_BASE,
