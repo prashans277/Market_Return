@@ -98,8 +98,8 @@ db.once("open", async () => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const adminUser = await User.create({
-      name: "Amritesh Anand",
-      email: "amritesh2901@gmail.com",
+      name: "Prashans Kumar",
+      email: "pemy27p@gmail.com",
       password: hashedPassword,
       user_type: "SYSTEM_ADMIN",
     });
